@@ -1,0 +1,201 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+      <style>   
+           html {
+                     overflow-y: scroll;
+                 }
+body {
+    background-color: #BFC9CA;
+}
+
+.a{
+                   background-color:#3498DB;
+	  border:none;
+                     margin: 5;
+                   height :80px;
+                   color:black;
+                   font-size:72px;
+                   padding :25px;
+                   text-align:center;
+                 
+                  }
+   
+     input[type=text] {
+    width: 15%;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    border-radius: 2px;
+    margin-left: 20;
+    font-size: 11px;
+    background-color: white;
+       }
+.dropbtn {
+ background-color:#3498DB  ;
+   border: 2px solid #1B4F72;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+   border-radius : 8px;
+   width:185px;
+}
+.dropbtn:hover {
+    background-color:#1B4F72; /* Green */
+    color: white;
+}
+.b{
+      border: none;
+       background-color:#BFC9CA;
+       width: 200px;
+      }
+.c{
+      border:none;
+      height:35px;
+     align:left;
+    width:1080px;
+     padding:10px;
+       border-radius : 8px;
+   background-color:#3498DB ; 
+}
+.mySlides {
+	display:none;
+	}
+.slideshow{
+	align:center;
+	border:none;
+	padding:20px;
+                margin-left:80px;
+	}
+
+ </style>
+</head>        
+<body>
+   <div class="a" background-color:#616A6B>
+          4Wheelies.com
+      </div>
+<div class="b"style="float:left;">
+  <div class="dropdown"style="float:top;">
+      <a href="index.html">
+      <button class="dropbtn">Home</button>
+   </a>
+  </div>
+      <div class="dropdown"style="float:top;">
+      <a href="index.html">
+      <button class="dropbtn">Compare</button>
+   </a>
+  </div>
+      <div>
+     <div class="dropdown"style="float:top;">
+    <a href="alto.html"> <button class="dropbtn">Alto 800</button></a>
+      </div>
+</div>
+     <div>
+    <div class="dropdown" style="float:top;">
+       <a href="omni.html"> <button class="dropbtn">Omni</button>
+        </div>
+</div>
+    <div>
+     <div class="dropdown"style="float:top;">
+     <a href="eeco.html"> <button class="dropbtn">Eeco</button></a>
+  </div>
+</div>
+ <div>
+     <div class="dropdown"style="float:top;">
+       <a href="altoK10.html"> <button class="dropbtn">Alto K10</button></a>
+    </div>
+</div>
+ <div>
+     <div class="dropdown"style="float:top;">
+       <a href="celerio.html"> <button class="dropbtn">Celerio</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="wagonr.html"> <button class="dropbtn">Wagon R10</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="ritz.html"> <button class="dropbtn">Ritz</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="stingary.html"> <button class="dropbtn">Stingary</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="swift.html"> <button class="dropbtn">Swift</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="gypsy.html"> <button class="dropbtn">Gypsy</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="baleno.html"> <button class="dropbtn">Baleno</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="swiftdesire.html"> <button class="dropbtn">Swift Desire</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="etiga.html"> <button class="dropbtn">Ertiga</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="vitara.html"> <button class="dropbtn">Vitara Brezza</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="ciaz.html"> <button class="dropbtn">Ciaz</button></a>
+    </div>
+</div>
+<div>
+     <div class="dropdown"style="float:top;">
+       <a href="scross.html"> <button class="dropbtn">S-Cross</button></a>
+    </div>
+</div>
+</div>
+     <div class="c"style="float:left;">
+<h3 align="center"><I>ALTO K10</I></h3>
+<div class="slideshow" style="max-width:700px" style="float:top">
+  <img class="mySlides" src="k10 exterior.jpg" style="width:100%">
+  <img class="mySlides" src="k10 interior.jpg" style="width:100%">
+  <img class="mySlides" src="k10 int1.jpg" style="width:100%">
+<img class="mySlides" src="k10 int2.jpg" style="width:100%">
+<div>
+<img src="k10 spec.jpg" style="max-width:1980px" style="float:top">
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+</body>
+</html>
