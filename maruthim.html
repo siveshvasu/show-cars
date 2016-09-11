@@ -69,12 +69,16 @@ body {
 	padding:20px;
                 margin-left:80px;
 	}
-
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+           }
  </style>
 </head>        
 <body>
    <div class="a" background-color:#616A6B>
-           showCARs
+          4Wheelies.com
       </div>
 <div class="b"style="float:left;">
   <div class="dropdown"style="float:top;">
@@ -170,62 +174,131 @@ body {
 </div>
      <div class="c"style="float:left;">
 <h3 align="center"><I>MARUTHI SUZUKI </I></h3>
-<script>
-function abc()
-{
-var city=f1.c1.selectedIndex;
-if(city==1)
-{
-window.location="maruthip.html";
-return false;
-}
-if(city==2)
-{
-window.location="maruthim.html";
-return false;
-}
-if(city==3)
-{
-window.location="maruthiec.html";
-return false;
-}
-}
-</script>
-<body>
-<form name="f1" onchange="return abc();">
-sortby:
-<select name="c1">
-<option>Select</option>selected
-<option>price</option>
-<option>milage</option>
-<option>engine capacity</option>
+<select>
+  <option value="price">Price</option>
+  <option value="mileage">Mileage</option>
+  <option value="seats">Seats</option>
+  <option value="engine capacity">Engine Capacity</option>
 </select>
-</form>
+<br>
+<br>
+<div class="e" >
+<table>
+  <tr>
+    <th>CarName</th>
+    <th> image </th>
+    <th>specs</th>
+      </tr>
+<tr>
+    <td>ALTO 800</td>
+    <td><img src="alto.jpg"height="100px"></td>
+      <td><I>2.59L onwards</I><br>Mileage :
+33 kmpl</td>
+     </tr>
+    <tr>
+<td>CIAZ</td>
+    <td><img src="ciaz exe1.jpg" height="100px"></td>
+    <td>7.75L onwards<br>Mileage :
+28 kmpl.</td>
+      </tr>
+<tr>
+    <tr>
+<td>BALENO</td>
+    <td><img src="bal exe3.jpg" height="100px"></td>
+    <td>5.32L onwards<br>Mileage :
+27 kmpl</td>
+      </tr>
+    <tr>
+<td>CELERIO</td>
+    <td><img src="cele exe3.jpg" height="100px"></td>
+    <td>4.16L onwards<br>Mileage :
+27 kmpl.</td>
+    </tr>
+<tr>
+    <tr>
+<td>SWIFT DESIRE</td>
+    <td><img src="desire exe2.jpg" height="100px"></td>
+    <td>5.39L onwards<br>Mileage :
+26 kmpl.</td>
+      </tr>
+    <tr>
+<td>SWIFT</td>
+    <td><img src="swift exe1.jpg" height="100px"></td>
+    <td>4.86L onwards<br>Mileage :
+25 kmpl.</td>
+      </tr>
+    <tr>
+<td>ERTIGA</td>
+    <td><img src="ertiga exe1.jpg" height="100px"></td>
+    <td>6.56L onwards<br>Mileage :
+24 kmpl</td>
+      </tr>
+    <tr>
+<td>ALTO K10</td>
+    <td><img src="k10 exterior.jpg" height="100px"></td>
+    <td>3.4L onwards<br>Mileage :
+24 kmpl</td>
+      </tr>
+    <tr>
+<td>VITARA BREEZA</td>
+    <td><img src="vitara int4.jpg" height="100px"></td>
+    <td>7.38L onwards<br>Mileage :
+24 kmpl</td>
+      </tr>
+    <tr>
+<td>RITZ</td>
+    <td><img src="ritz exe1.jpg" height="100px"></td>
+    <td>4.56L onwards<br>Mileage :
+23 kmpl</td>
+      </tr>
+    <tr>
+<td>S-CROSS</td>
+    <td><img src="cross exe1.jpg" height="100px"></td>
+    <td>8.38L onwards<br>
+Mileage :
+23 kmpl</td>
+      </tr>
+    <tr>
+<td>STINGRAY</td>
+    <td><img src="stig exe.jpg" height="100px"></td>
+    <td>4.75L onwards<br>Mileage :
+20 kmpl</td>
+      </tr>
+    <tr>
+<td>WAGON R10</td>
+    <td><img src="wag exe1.jpg" height="100px"></td>
+    <td>4.21L onwards<br>Mileage :
+18 kmpl</td>
+      </tr>
+<td>OMNI</td>
+    <td><img src="omni exterior.jpg" height="100px"></td>
+    <td><I>2.78L onwards</I><br>Mileage :
+16 kmpl</td>
+    </tr>
+<tr>
+<td>Eeco</td>
+    <td><img src="eeco fexe.jpg" height="100px"></td>
+    <td>3.4L onwards<br>Mileage :
+15 kmpl</td>
+      </tr>
 
 
 
-<div class="slideshow" style="max-width:600px" style="float:top">
-  <img class="mySlides" src="1.jpg" style="width:100%">
-  <img class="mySlides" src="2.jpg" style="width:100%">
-  <img class="mySlides" src="3.jpg" style="width:100%">
+
+
+
+
+<tr>
+<td>GYPSY</td>
+    <td><img src="gyp exe3.jpg" height="100px"></td>
+    <td>6.39L onwards<br>mileage:11.96kmpl</td>
+      </tr>
+
+
+
+
+</table>
 </div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 </div>
 </div>
 </body>
